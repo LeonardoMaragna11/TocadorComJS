@@ -1,7 +1,4 @@
 *{
-    /* padding: 0;
-    margin: 0;
-    box-sizing: border-box; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body, html{
@@ -64,6 +61,7 @@ progress{
     width: 30px;
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
 }
 .btn-pause{
     width: 60px;
