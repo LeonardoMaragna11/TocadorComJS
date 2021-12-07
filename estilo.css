@@ -1,0 +1,80 @@
+*{
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #3b3b3b;
+    color: #ddd;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+.descricao{
+   width: 300px;
+}
+h2{
+    margin-bottom: 5px;
+}
+.duracao{
+    width: 300px;
+    margin-top: 25px;
+}
+.barra{
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ponto{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+}
+progress{
+    margin-left: 0;
+    padding: 0;
+    width: 0%;
+    height: 6px;
+    background-color: #292929;
+}
+.tempo{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.btn{
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn-pause{
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+.btn-play{
+    width: 80px;
+    height: 80px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
