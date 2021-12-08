@@ -68,15 +68,21 @@ let artista = document.getElementById('artista')
 
 let tocando = false
 function tocarMusica(){
-    musica.play()
     tocando=true
-    document.getElementById('btn-play').style.display = 'none'
-    document.querySelector('.btn-pause').style.display = 'block'
-    document.getElementById('btn-pause').style.display = 'block'
-    document.getElementById('nomeMusica').style.color = '#fff'
-    document.getElementById('artista').style.color = '#fff'
-    document.getElementsByClassName('btn').style.display = 'block'
-    atualizaMusica()
+    do{
+        musica.play()
+    
+        document.getElementById('btn-play').style.display = 'none'
+        document.querySelector('.btn-pause').style.display = 'block'
+        document.getElementById('btn-pause').style.display = 'block'
+        document.getElementById('nomeMusica').style.color = '#fff'
+        document.getElementById('artista').style.color = '#fff'
+        document.getElementsByClassName('btn').style.display = 'block'
+        if(musica.duration == musica.currentTime){
+            tocando = false
+        }
+
+    }while(tocando)
 }
 function pausar(){
     musica.pause()
