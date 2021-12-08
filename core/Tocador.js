@@ -122,7 +122,7 @@ let musicas = [
     
 ]
 
-let indexMusica= -1 
+let indexMusica= Math.floor(Math.random()*(musicas.length)-1)
 let musica = document.querySelector('audio')
 musica.addEventListener('timeupdate', Probarra)
 let imagem = document.getElementById('img')
