@@ -44,12 +44,36 @@ let musicas = [
     //     LocalMusica:''
     // },
 ]
-let aleatorio = Math.floor(Math.random()*musicas.length-1)
+
 let indexMusica= -1 
-console.log(musicas.map)
 
+
+
+musica.addEventListener('timeupdate', Probarra)
+let imagem = document.getElementById('img')
+let nome = document.getElementById('nomeMusica')
+let artista = document.getElementById('artista')
+let tocando = false
+
+
+
+
+
+
+
+
+// Funções
+
+function fimMusica(){
+    if(musica.duration >= musica.currentTime){
+        tocando = false
+        return proxima()
+    }else if(musica.duration < musica.currentTime){
+        tocando = true
+        return console.log(tocando)
+    }
+}
 function atualizaMusica(index){
-
     musica.setAttribute('src', musicas[index].LocalMusica)    
     musica.addEventListener('loadeddata', () => { 
         nome.textContent = musicas[index].nome
@@ -59,30 +83,17 @@ function atualizaMusica(index){
         tempoMusica.textContent = converterTempo(Math.floor(musica.duration))
     })
     tocarMusica()
-    tocando=true
+
 }
-musica.addEventListener('timeupdate', Probarra)
-let imagem = document.getElementById('img')
-let nome = document.getElementById('nomeMusica')
-let artista = document.getElementById('artista')
-
-let tocando = false
-function tocarMusica(){
-    tocando=true
-    do{
-        musica.play()
-    
-        document.getElementById('btn-play').style.display = 'none'
-        document.querySelector('.btn-pause').style.display = 'block'
-        document.getElementById('btn-pause').style.display = 'block'
-        document.getElementById('nomeMusica').style.color = '#fff'
-        document.getElementById('artista').style.color = '#fff'
-        document.getElementsByClassName('btn').style.display = 'block'
-        if(musica.duration == musica.currentTime){
-            tocando = false
-        }
-
-    }while(tocando)
+function tocarMusica(){    
+    musica.play()
+    document.getElementById('btn-play').style.display = 'none'
+    document.querySelector('.btn-pause').style.display = 'block'
+    document.getElementById('btn-pause').style.display = 'block'
+    document.getElementById('nomeMusica').style.color = '#fff'
+    document.getElementById('artista').style.color = '#fff'
+    document.getElementsByClassName('btn').style.display = 'block'
+    fimMusica()
 }
 function pausar(){
     musica.pause()
