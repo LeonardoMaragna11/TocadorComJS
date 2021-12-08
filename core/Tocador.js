@@ -29,7 +29,10 @@ function atualizaMusica(index){
         let tempoMusica = document.getElementById('fim')
         tempoMusica.textContent = converterTempo(Math.floor(musica.duration))
     })
-    tocarMusica()
+    musica.play()
+
+    tocando=true
+
 }
 musica.addEventListener('timeupdate', Probarra)
 let imagem = document.getElementById('img')
@@ -37,7 +40,7 @@ let nome = document.getElementById('nomeMusica')
 let artista = document.getElementById('artista')
 
 let tocando = false
-function tocarMusica(index){
+function tocarMusica(){
     musica.play()
     tocando=true
     document.getElementById('btn-play').style.display = 'none'
@@ -45,6 +48,7 @@ function tocarMusica(index){
     document.getElementById('btn-pause').style.display = 'block'
     document.getElementById('nomeMusica').style.color = '#fff'
     document.getElementById('artista').style.color = '#fff'
+    document.getElementsByClassName('btn').style.display = 'block'
 }
 function pausar(){
     musica.pause()
