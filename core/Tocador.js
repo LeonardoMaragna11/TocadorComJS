@@ -37,7 +37,7 @@ let nome = document.getElementById('nomeMusica')
 let artista = document.getElementById('artista')
 
 let tocando = false
-function tocarMusica(){
+function tocarMusica(index){
     musica.play()
     tocando=true
     document.getElementById('btn-play').style.display = 'none'
