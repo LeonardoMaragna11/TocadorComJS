@@ -1,3 +1,4 @@
+
 let musica = document.querySelector('audio')
 let musicas = [
     {
@@ -43,10 +44,9 @@ let musicas = [
     //     LocalMusica:''
     // },
 ]
-shuffleArray(musicas)
 let aleatorio = Math.floor(Math.random()*musicas.length-1)
 let indexMusica= -1 
-
+console.log(musicas.map)
 
 function atualizaMusica(index){
 
@@ -114,4 +114,3 @@ function voltar(){
         atualizaMusica(indexMusica)
     }
 }
-
