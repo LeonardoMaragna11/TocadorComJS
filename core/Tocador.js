@@ -43,12 +43,10 @@ let musicas = [
     //     LocalMusica:''
     // },
 ]
+shuffleArray(musicas)
 let aleatorio = Math.floor(Math.random()*musicas.length-1)
 let indexMusica= -1 
-function inicio(){
-    indexMusica++
-    atualizaMusica(indexMusica)
-}
+
 
 function atualizaMusica(index){
 
