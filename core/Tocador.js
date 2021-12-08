@@ -174,11 +174,15 @@ function proxima(){
     if(indexMusica < (musicas.length)-1){
         indexMusica ++
         atualizaMusica(indexMusica)
+    }else{
+        indexMusica = 0
     }
 }
 function voltar(){
     if(indexMusica > 0){
         indexMusica --
         atualizaMusica(indexMusica)
+    }else{
+        indexMusica = 0
     }
 }
