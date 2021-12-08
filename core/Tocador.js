@@ -1,6 +1,6 @@
 let musica = document.querySelector('audio')
 let musicas = []
-
+musica.addEventListener('timeupdate', Probarra)
 
 let tocando = false
 function tocarMusica(){
@@ -16,4 +16,9 @@ function pausar(){
     document.getElementById('btn-play').style.display = 'block'
     document.querySelector('.btn-pause').style.display = 'none'
     document.getElementById('btn-pause').style.display = 'none'
+}
+function Probarra(){
+    let barra = document.getElementById('barra_html')
+    let progressaoBarra  = Math.floor((musica.currentTime/musica.duration)*100) +"%"
+    barra.style.width = progressaoBarra
 }
