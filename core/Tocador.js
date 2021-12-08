@@ -27,17 +27,7 @@ function inicio(){
 }
 
 function atualizaMusica(index){
-    // if(index <= 0){
-    //     // document.getElementById('btn-esquerdo').style.color="#3b3b3b"
-    //     document.getElementById('btn-esquerdo').disabled=true 
-    //     document.getElementById('btn-direito').disabled=false
-    //     // document.getElementById('btn-direito').style.color="#fff"
-    // }else if(index >= (musicas.length)-1 ){
-    //     document.getElementById('btn-direito').disabled=true
-    //     document.getElementById('btn-esquerdo').disabled=false
-    //     // document.getElementById('btn-direito').style.color="#3b3b3b"
-    //     // document.getElementById('btn-esquerdo').style.color="#fff"
-    // }
+
     musica.setAttribute('src', musicas[index].LocalMusica)    
     musica.addEventListener('loadeddata', () => { 
         nome.textContent = musicas[index].nome
@@ -91,11 +81,15 @@ function converterTempo(segundos){
     return (minuto+':'+segundo)
 }
 function proxima(){
-    indexMusica ++
-    atualizaMusica(indexMusica)
+    if(indexMusica < (musicas.length)-1){
+        indexMusica ++
+        atualizaMusica(indexMusica)
+    }
 }
 function voltar(){
-    indexMusica --
-    atualizaMusica(indexMusica)
+    if(indexMusica > 0){
+        indexMusica --
+        atualizaMusica(indexMusica)
+    }
 }
 
