@@ -175,7 +175,7 @@ function proxima(){
         indexMusica ++
         atualizaMusica(indexMusica)
     }else{
-        indexMusica = 0
+        indexMusica = -1
     }
 }
 function voltar(){
@@ -183,6 +183,6 @@ function voltar(){
         indexMusica --
         atualizaMusica(indexMusica)
     }else{
-        indexMusica = 0
+        indexMusica = -1
     }
 }
