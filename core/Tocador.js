@@ -70,8 +70,10 @@ function atualizaMusica(index){
 function tocarMusica(){    
     musica.play()
     document.getElementById('btn-play').style.display = 'none'
-    document.querySelector('.btn-pause').style.display = 'block'
-    document.getElementById('btn-pause').style.display = 'block'
+    document.querySelector('.btn-pause').style.display = 'flex'
+    document.getElementById('btn-pause').style.display = 'flex'
+    document.querySelector('.btn-pause').style.width = '80px'
+    document.querySelector('.btn-pause').style.height = '80px'
     document.getElementById('nomeMusica').style.color = '#fff'
     document.getElementById('artista').style.color = '#fff'
     document.getElementsByClassName('btn').style.display = 'block'

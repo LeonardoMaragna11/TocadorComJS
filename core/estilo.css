@@ -78,19 +78,10 @@ button{
     border: none;
     color: #fff;
 }
-#btn_pause{
+#btn-pause{
     width: 80px;
     height: 80px;
     display: none;
+    text-align: center;
 }
-h2{
-    color: #3b3b3b;
-}
-i{
-    color: #3b3b3b;
-}
-.btn-pause{
-    width: 80px;
-    height: 80px;
-    display: none;
-}
+
