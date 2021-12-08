@@ -17,30 +17,97 @@ let musicas = [
         artista: 'Creedence Clearwater Revival',
         LocalMusica: 'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
     },
-    // {
-    //     nome: '',
-    //     imagem: '',
-    //     artista: '',
-    //     LocalMusica:''
-    // },
-    // {
-    //     nome: '',
-    //     imagem: '',
-    //     artista: '',
-    //     LocalMusica:''
-    // },
-    // {
-    //     nome: '',
-    //     imagem: '',
-    //     artista: '',
-    //     LocalMusica:''
-    // },
-    // {
-    //     nome: '',
-    //     imagem: '',
-    //     artista: '',
-    //     LocalMusica:''
-    // },
+    {
+        nome: 'My way',
+        imagem: 'https://conteudo.imguol.com.br/c/entretenimento/a7/2018/01/17/o-cantor-frank-sinatra-1516217743700_v2_450x337.jpg',
+        artista: 'Frank Sinatra',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'I Wanna Rock and Roll',
+        imagem: 'https://fenixtickethotel.com.br/wp-content/uploads/2020/08/kiss-endoftheroad-tour-300x300.jpg',
+        artista: 'Kiss',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Jailhose Rock',
+        imagem: 'https://lastfm.freetls.fastly.net/i/u/770x0/154099fa6f794bdf8f039e528250cfa7.jpg',
+        artista: 'Elvis Presley',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: "Who's Lovin' You",
+        imagem: 'https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/7/4/b/a/74ba0a2ca596fd8be21c0d7889dc9a6b.jpg',
+        artista: 'The Jacksons V',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Help',
+        imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw4O2UWARgEzES4wsUG-SB3EsHJUm5G0Hw-g&usqp=CAU',
+        artista: 'The Beatles',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Paint it, Black',
+        imagem: 'https://studiosol-a.akamaihd.net/tb/cifra-blog/pt/wp-content/uploads/2012/07/logo.jpg',
+        artista: 'Rolling Stones',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Blitzkrieg Bop',
+        imagem: 'https://imagens.brasil.elpais.com/resizer/rePnjWn1rbZ_ZCPLPiWWojudThs=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/HLU6FKBJCLJBVFO6AUYXKFFSEU.jpg',
+        artista: 'Ramones',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Learnig To Fly',
+        imagem: 'http://1.bp.blogspot.com/-Wg6dcviHaYI/UVCMxzUQyZI/AAAAAAAAGKU/TGG2K5iZ3eI/s1600/dark-side.png',
+        artista: 'Pink Floyd',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Billie Jean',
+        imagem: 'https://independente.com.br/wp-content/uploads/2018/08/capa-do-album-thriller-de-michael-jackson-1502314013348_v2_300x300.jpg',
+        artista: 'Michael Jackson',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Sweet Child Of Mine',
+        imagem: 'https://images.sk-static.com/images/media/profile_images/artists/509644/huge_avatar',
+        artista: "Gun's and Roses",
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Smells Like Teen Spirit',
+        imagem: 'https://seeklogo.com/images/N/nirvana-logo-F04BC8644A-seeklogo.com.png',
+        artista: 'Nirvana',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'La Isla Bonita',
+        imagem: 'https://i.pinimg.com/474x/79/a0/0f/79a00fb17aa0990597cfe8f4238ae4c7.jpg',
+        artista: 'Madonna',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Soul Of Squeeze',
+        imagem: 'https://a-static.mlcdn.com.br/618x463/red-hot-chili-peppers-cd-rock-radar/multisomoficial/1099388-1099390/75c170cd4eaef0c1fea3a96bf8d007f3.jpg',
+        artista: 'Red Hot Chilli Pepers',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Waka Waka',
+        imagem: 'https://www.agesporte.com.br/wp-content/uploads/2010/06/JABULANI.jpg',
+        artista: 'Shakira',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    {
+        nome: 'Umbrella',
+        imagem: '',
+        artista: 'Rihanna',
+        LocalMusica:'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
+    },
+    
 ]
 
 let indexMusica= -1 
