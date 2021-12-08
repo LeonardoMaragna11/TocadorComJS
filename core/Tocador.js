@@ -17,7 +17,31 @@ let musicas = [
         imagem: 'https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/3/c/c/2/39391552064273.jpg',
         artista: 'Creedence Clearwater Revival',
         LocalMusica: 'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
-    }
+    },
+    // {
+    //     nome: '',
+    //     imagem: '',
+    //     artista: '',
+    //     LocalMusica:''
+    // },
+    // {
+    //     nome: '',
+    //     imagem: '',
+    //     artista: '',
+    //     LocalMusica:''
+    // },
+    // {
+    //     nome: '',
+    //     imagem: '',
+    //     artista: '',
+    //     LocalMusica:''
+    // },
+    // {
+    //     nome: '',
+    //     imagem: '',
+    //     artista: '',
+    //     LocalMusica:''
+    // },
 ]
 let aleatorio = Math.floor(Math.random()*musicas.length-1)
 let indexMusica= -1 
