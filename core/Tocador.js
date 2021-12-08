@@ -30,9 +30,7 @@ function atualizaMusica(index){
         tempoMusica.textContent = converterTempo(Math.floor(musica.duration))
     })
     musica.play()
-
     tocando=true
-
 }
 musica.addEventListener('timeupdate', Probarra)
 let imagem = document.getElementById('img')
