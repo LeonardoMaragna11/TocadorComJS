@@ -2,23 +2,35 @@ let musica = document.querySelector('audio')
 let musicas = [
     {
         nome: 'Dire Straits Sultans Of Swin',
-        imagem: 'img/Dire Srait.png',
+        imagem: 'https://m.media-amazon.com/images/I/6129HZR+QoL._AC_SY355_.jpg',
         artista: 'Dire Strats',
         LocalMusica: 'Musics/Dire Straits   Sultans Of Swin.mp3'
     },
     {
         nome: 'You give love a bad name',
-        imagem: 'img/Bon Jovi.png',
+        imagem: 'https://i.scdn.co/image/ab6761610000e5eb0b8d424042d51bb8ee412ffe',
         artista: 'Bon Jovi',
         LocalMusica: 'Musics/You give love a bad name - Bon Jovi.mp3'
     },
     {
         nome: 'Have you ever seen in the rain',
-        imagem: 'img/Creedence Clearwater Revival.png',
+        imagem: 'https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/3/c/c/2/39391552064273.jpg',
         artista: 'Creedence Clearwater Revival',
         LocalMusica: 'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
     }
 ]
+let indexMusica=0
+function atualizaMusica(index){
+    musica.setAttribute('src', musicas[index].LocalMusica)    
+    musica.addEventListener('loadeddata', () => { 
+        nome.textContent = musicas[index].nome
+        artista.textContent = musicas[index].artista
+        imagem.setAttribute('src',musicas[index].imagem)
+        let tempoMusica = document.getElementById('fim')
+        tempoMusica.textContent = converterTempo(Math.floor(musica.duration))
+    })
+    tocarMusica()
+}
 musica.addEventListener('timeupdate', Probarra)
 let imagem = document.getElementById('img')
 let nome = document.getElementById('nomeMusica')
@@ -31,7 +43,8 @@ function tocarMusica(){
     document.getElementById('btn-play').style.display = 'none'
     document.querySelector('.btn-pause').style.display = 'block'
     document.getElementById('btn-pause').style.display = 'block'
-    
+    document.getElementById('nomeMusica').style.color = '#fff'
+    document.getElementById('artista').style.color = '#fff'
 }
 function pausar(){
     musica.pause()
@@ -57,3 +70,12 @@ function converterTempo(segundos){
     }
     return (minuto+':'+segundo)
 }
+function proxima(){
+    indexMusica ++
+    atualizaMusica(indexMusica)
+}
+function voltar(){
+    indexMusica --
+    atualizaMusica(indexMusica)
+}
+
