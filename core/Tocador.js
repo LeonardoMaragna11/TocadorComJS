@@ -19,13 +19,21 @@ let musicas = [
         LocalMusica: 'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
     }
 ]
-let indexMusica=-1
+let aleatorio = Math.floor(Math.random()*musicas.length-1)
+let indexMusica= -1 
 function inicio(){
     indexMusica++
     atualizaMusica(indexMusica)
 }
 
 function atualizaMusica(index){
+    if(index <= 0){
+        document.getElementById('btn-esquerdo').disabled=true 
+        document.getElementById('btn-direito').disabled=false
+    }else if(index >= (musicas.length)-1 ){
+        document.getElementById('btn-direito').disabled=true
+        document.getElementById('btn-esquerdo').disabled=false
+    }
     musica.setAttribute('src', musicas[index].LocalMusica)    
     musica.addEventListener('loadeddata', () => { 
         nome.textContent = musicas[index].nome
