@@ -63,11 +63,7 @@ progress{
     margin-right: 15px;
     cursor: pointer;
 }
-.btn-pause{
-    width: 80px;
-    height: 80px;
-    display: none;
-}
+
 .btn-play{
     display: block;
     width: 80px;
@@ -92,4 +88,9 @@ h2{
 }
 i{
     color: #3b3b3b;
+}
+.btn-pause{
+    width: 80px;
+    height: 80px;
+    display: none;
 }

@@ -1,5 +1,3 @@
-
-let musica = document.querySelector('audio')
 let musicas = [
     {
         nome: 'Dire Straits Sultans Of Swin',
@@ -46,33 +44,18 @@ let musicas = [
 ]
 
 let indexMusica= -1 
-
-
-
+let musica = document.querySelector('audio')
 musica.addEventListener('timeupdate', Probarra)
 let imagem = document.getElementById('img')
 let nome = document.getElementById('nomeMusica')
 let artista = document.getElementById('artista')
 let tocando = false
-
-
-
-
-
-
-
+musica.addEventListener('ended',()=>{
+    proxima()
+})
 
 // Funções
 
-function fimMusica(){
-    if(musica.duration >= musica.currentTime){
-        tocando = false
-        return proxima()
-    }else if(musica.duration < musica.currentTime){
-        tocando = true
-        return console.log(tocando)
-    }
-}
 function atualizaMusica(index){
     musica.setAttribute('src', musicas[index].LocalMusica)    
     musica.addEventListener('loadeddata', () => { 
