@@ -19,7 +19,12 @@ let musicas = [
         LocalMusica: 'Musics/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3'
     }
 ]
-let indexMusica=0
+let indexMusica=-1
+function inicio(){
+    indexMusica++
+    atualizaMusica(indexMusica)
+}
+
 function atualizaMusica(index){
     musica.setAttribute('src', musicas[index].LocalMusica)    
     musica.addEventListener('loadeddata', () => { 
@@ -29,7 +34,7 @@ function atualizaMusica(index){
         let tempoMusica = document.getElementById('fim')
         tempoMusica.textContent = converterTempo(Math.floor(musica.duration))
     })
-    musica.play()
+    tocarMusica()
     tocando=true
 }
 musica.addEventListener('timeupdate', Probarra)
@@ -47,6 +52,7 @@ function tocarMusica(){
     document.getElementById('nomeMusica').style.color = '#fff'
     document.getElementById('artista').style.color = '#fff'
     document.getElementsByClassName('btn').style.display = 'block'
+    atualizaMusica()
 }
 function pausar(){
     musica.pause()
