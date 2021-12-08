@@ -83,7 +83,6 @@ function atualizaMusica(index){
         tempoMusica.textContent = converterTempo(Math.floor(musica.duration))
     })
     tocarMusica()
-
 }
 function tocarMusica(){    
     musica.play()
@@ -93,7 +92,6 @@ function tocarMusica(){
     document.getElementById('nomeMusica').style.color = '#fff'
     document.getElementById('artista').style.color = '#fff'
     document.getElementsByClassName('btn').style.display = 'block'
-    fimMusica()
 }
 function pausar(){
     musica.pause()
