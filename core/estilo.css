@@ -60,19 +60,30 @@ progress{
     height: 30px;
     width: 30px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 15px;
     cursor: pointer;
 }
 .btn-pause{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: none;
 }
 .btn-play{
+    display: block;
     width: 80px;
     height: 80px;
 }
 .player{
     display: flex;
     align-items: center;
+}
+button{
+    background-color: #3b3b3b;
+    border: none;
+    color: #fff;
+}
+#btn_pause{
+    width: 80px;
+    height: 80px;
+    display: none;
 }
