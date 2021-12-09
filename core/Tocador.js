@@ -39,7 +39,7 @@ let musicas = [
         nome: "Who's Lovin' You",
         imagem: 'https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/7/4/b/a/74ba0a2ca596fd8be21c0d7889dc9a6b.jpg',
         artista: 'The Jacksons V',
-        LocalMusica:'Musics/Whos Lovin You - The K.mp3.mp3'
+        LocalMusica:'Musics/Whos Lovin You - The K.mp3'
     },
     {
         nome: 'Hey Jude',//
@@ -115,7 +115,7 @@ let musicas = [
     },
     {
         nome: 'Umbrella',//
-        imagem: '',
+        imagem: 'https://portalpopline.com.br/wp-content/uploads/2021/03/rihanna-fenty-beauty.jpg',
         artista: 'Rihanna',
         LocalMusica:'Musics/Umbrella - Rihanna.mpeg'
     },
