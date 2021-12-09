@@ -29,18 +29,18 @@ let musicas = [
         artista: 'Kiss',
         LocalMusica:'Musics/Kiss   Rock And Roll All Nite (From Kiss eXposed.mp3'
     },
-    // {
-    //     nome: 'Jailhose Rock',
-    //     imagem: 'https://lastfm.freetls.fastly.net/i/u/770x0/154099fa6f794bdf8f039e528250cfa7.jpg',
-    //     artista: 'Elvis Presley',
-    //     LocalMusica:'Musics/.mp3'
-    // },
-    // {
-    //     nome: "Who's Lovin' You",
-    //     imagem: 'https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/7/4/b/a/74ba0a2ca596fd8be21c0d7889dc9a6b.jpg',
-    //     artista: 'The Jacksons V',
-    //     LocalMusica:'Musics/.mp3'
-    // },
+    {
+        nome: 'Jailhose Rock',
+        imagem: 'https://lastfm.freetls.fastly.net/i/u/770x0/154099fa6f794bdf8f039e528250cfa7.jpg',
+        artista: 'Elvis Presley',
+        LocalMusica:'Musics/Elvis Presley   Jailhouse Rock (Music Video.mp3'
+    },
+    {
+        nome: "Who's Lovin' You",
+        imagem: 'https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/7/4/b/a/74ba0a2ca596fd8be21c0d7889dc9a6b.jpg',
+        artista: 'The Jacksons V',
+        LocalMusica:'Musics/Whos Lovin You - The K.mp3.mp3'
+    },
     {
         nome: 'Hey Jude',//
         imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw4O2UWARgEzES4wsUG-SB3EsHJUm5G0Hw-g&usqp=CAU',
@@ -59,12 +59,12 @@ let musicas = [
         artista: 'Queen',
         LocalMusica:'Musics/Queen   We Are The Champions (Official Live Video.mp3'
     },
-    // {
-    //     nome: 'Paint it, Black',
-    //     imagem: 'https://studiosol-a.akamaihd.net/tb/cifra-blog/pt/wp-content/uploads/2012/07/logo.jpg',
-    //     artista: 'Rolling Stones',
-    //     LocalMusica:'Musics/.mp3'
-    // },
+    {
+        nome: 'Paint it, Black',
+        imagem: 'https://studiosol-a.akamaihd.net/tb/cifra-blog/pt/wp-content/uploads/2012/07/logo.jpg',
+        artista: 'Rolling Stones',
+        LocalMusica:'Musics/The Rolling Stones   Paint It, Black (Official Lyric Video.mp3'
+    },
     {
         nome: 'Blitzkrieg Bop',//
         imagem: 'https://imagens.brasil.elpais.com/resizer/rePnjWn1rbZ_ZCPLPiWWojudThs=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/HLU6FKBJCLJBVFO6AUYXKFFSEU.jpg',
@@ -72,7 +72,7 @@ let musicas = [
         LocalMusica:'Musics/Ramones   Blitzkrieg Bop (Official Music Video.mp3'
     },
     {
-        nome: 'Learnig To Fly',//
+        nome: 'Learning To Fly',//
         imagem: 'http://1.bp.blogspot.com/-Wg6dcviHaYI/UVCMxzUQyZI/AAAAAAAAGKU/TGG2K5iZ3eI/s1600/dark-side.png',
         artista: 'Pink Floyd',
         LocalMusica:'Musics/Pink Floyd   Learning To Fly (Official Music Video HD.mp3'
@@ -95,30 +95,30 @@ let musicas = [
         artista: 'Nirvana',
         LocalMusica:'Musics/Nirvana   Smells Like Teen Spirit (Official Music Video.mp3'
     },
-    // {
-    //     nome: 'La Isla Bonita',
-    //     imagem: 'https://i.pinimg.com/474x/79/a0/0f/79a00fb17aa0990597cfe8f4238ae4c7.jpg',
-    //     artista: 'Madonna',
-    //     LocalMusica:'Musics/.mp3'
-    // },
-    // {
-    //     nome: 'Soul Of Squeeze',
-    //     imagem: 'https://a-static.mlcdn.com.br/618x463/red-hot-chili-peppers-cd-rock-radar/multisomoficial/1099388-1099390/75c170cd4eaef0c1fea3a96bf8d007f3.jpg',
-    //     artista: 'Red Hot Chilli Pepers',
-    //     LocalMusica:'Musics/.mp3'
-    // },
-    // {
-    //     nome: 'Waka Waka',
-    //     imagem: 'https://www.agesporte.com.br/wp-content/uploads/2010/06/JABULANI.jpg',
-    //     artista: 'Shakira',
-    //     LocalMusica:'Musics/.mp3'
-    // },
-    // {
-    //     nome: 'Umbrella',
-    //     imagem: '',
-    //     artista: 'Rihanna',
-    //     LocalMusica:'Musics/.mp3'
-    // },
+    {
+        nome: 'La Isla Bonita',//
+        imagem: 'https://i.pinimg.com/474x/79/a0/0f/79a00fb17aa0990597cfe8f4238ae4c7.jpg',
+        artista: 'Madonna',
+        LocalMusica:'Musics/Madonna - La Isla Bonita.mp3'
+    },
+    {
+        nome: 'Soul Of Squeeze',//
+        imagem: 'https://a-static.mlcdn.com.br/618x463/red-hot-chili-peppers-cd-rock-radar/multisomoficial/1099388-1099390/75c170cd4eaef0c1fea3a96bf8d007f3.jpg',
+        artista: 'Red Hot Chilli Pepers',
+        LocalMusica:'Musics/Red Hot Chili Peppers - Soul To Squeeze.mp3'
+    },
+    {
+        nome: 'Waka Waka',//
+        imagem: 'https://www.agesporte.com.br/wp-content/uploads/2010/06/JABULANI.jpg',
+        artista: 'Shakira',
+        LocalMusica:'Musics/Waka Waka - Shakira.mpeg'
+    },
+    {
+        nome: 'Umbrella',//
+        imagem: '',
+        artista: 'Rihanna',
+        LocalMusica:'Musics/Umbrella - Rihanna.mpeg'
+    },
     
 ]
 
